@@ -1,0 +1,6 @@
+require('plugins.tokyo-night')
+require('plugins.nvim-tree')
+require('plugins.lualine')
+require('plugins.telescope')
+require('plugins.treesitter')
+require('plugins.lsp_config')
