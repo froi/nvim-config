@@ -33,6 +33,16 @@ return require('packer').startup(function(use)
     "neovim/nvim-lspconfig",
   }
 
+  use "hrsh7th/nvim-cmp"
+  use "hrsh7th/cmp-buffer"
+  use "hrsh7th/cmp-path"
+  use "hrsh7th/cmp-cmdline"
+  use "saadparwaiz1/cmp_luasnip"
+
+  -- Snippet engines are required to use nvim-cmp
+  use "L3MON4D3/LuaSnip"
+  use "rafamadriz/friendly-snippets"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
