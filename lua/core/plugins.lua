@@ -27,22 +27,32 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use 'nvim-treesitter/nvim-treesitter'
+
+  -- LSP
   use {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
   }
 
+  -- Completions (cmp)
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-buffer"
   use "hrsh7th/cmp-path"
   use "hrsh7th/cmp-cmdline"
   use "saadparwaiz1/cmp_luasnip"
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lua"
 
   -- Snippet engines are required to use nvim-cmp
-  use "L3MON4D3/LuaSnip"
-  use "rafamadriz/friendly-snippets"
+  use "L3MON4D3/LuaSnip" --snippet engine
+  use "rafamadriz/friendly-snippets" -- snippet collection
 
+  use "windwp/nvim-autopairs"
+
+  use "lewis6991/gitsigns.nvim"
+
+  use "akinsho/toggleterm.nvim"
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
