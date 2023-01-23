@@ -3,6 +3,9 @@
 I've always been curious on how much I'd like of hate using Neovim as my daily editor for development. After a few days 
 of learining about Neovim, the plugins and Lua, this is my take on a configuration that I think could work for me.
 
+This configuration is highly influenced by [LunarVim/Neovim-from-scratch
+](https://github.com/LunarVim/Neovim-from-scratch) and their [YouTube series](https://youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ) 
+
 ## What's in the box 📦
 
 <details>
