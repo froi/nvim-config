@@ -56,6 +56,10 @@ return require('packer').startup(function(use)
 
   use {"ellisonleao/glow.nvim"}
 
+  use 'simrat39/symbols-outline.nvim'
+
+  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
