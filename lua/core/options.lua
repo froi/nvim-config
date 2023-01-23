@@ -1,6 +1,3 @@
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
-
 -- All options can be found in https://neovim.io/doc/user/quickref.html#Q_op
 
 vim.opt.autoindent = true
@@ -22,4 +19,5 @@ vim.opt.shiftwidth = 2
 vim.opt.shiftround = true
 vim.opt.tabstop = 2
 
-vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
