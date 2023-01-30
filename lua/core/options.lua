@@ -19,5 +19,6 @@ vim.opt.shiftwidth = 2
 vim.opt.shiftround = true
 vim.opt.tabstop = 2
 
+vim.opt.foldlevelstart = 99
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
